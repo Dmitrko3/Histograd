@@ -2,34 +2,3 @@
 Pre-Final Project in numerical analysis
 We chose Architecture 2 from Architectures_by_gemini.
 
-FOLLOW PROJECT STRUCTURE:
-
-HistoGrad/
-│
-├── src/                               # Main source code directory
-│   ├── main.py                        # Entry point & CLI setup
-│   │
-│   ├── core/                          # The Core Framework (My domain - Integration Eng)
-│   │   ├── __init__.py
-│   │   ├── interfaces.py              # Contains the IDerivativeMethod base class
-│   │   ├── evaluator.py               # Calculates the analytical derivative and error margins
-│   │   └── visualizer.py              # Generates the Convergence Rate graph
-│   │
-│   └── plugins/                       # The Strategy Modules (Algorithm Engineers)
-│       ├── __init__.py
-│       ├── richardson.py              # Richardson Extrapolation module
-│       └── advanced_method.py         # Second advanced method module
-│
-├── tests/                             # Automated Test Suite (QA Engineer's domain)
-│   ├── __init__.py
-│   ├── test_richardson.py             # Unit tests for Algo 1
-│   ├── test_advanced_method.py        # Unit tests for Algo 2
-│   ├── test_core.py                   # Tests for the evaluator and visualizer
-│   └── test_integration.py            # End-to-end tests for the whole CLI
-│
-├── docs/                              # Documentation (Documentation Lead's domain)
-│   └── MATH.md                        # Mathematical theory and summaries (No code!)
-│
-├── requirements.txt                   # Project dependencies (e.g., numpy, matplotlib)
-├── coding_standards.md                # Repo rules and AI prompt guidelines
-└── README.md                          # Main project guide with placeholders
