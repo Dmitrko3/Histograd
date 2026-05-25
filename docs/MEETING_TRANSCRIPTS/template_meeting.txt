@@ -1,0 +1,41 @@
+Meeting Title:
+
+Date:
+
+Sprint Number:
+
+Participants:
+
+Meeting Type:
+(Sprint Planning / Balint / Review / Integration)
+
+AI Tools Used:
+
+Main Topics Discussed:
+1.
+2.
+3.
+
+Important Decisions:
+1.
+2.
+3.
+
+Problems Encountered:
+1.
+2.
+
+AI Agent Conflicts / Different Suggestions:
+1.
+2.
+
+Tasks Assigned:
+- Task:
+  Owner:
+  Deadline:
+
+Open Questions:
+1.
+2.
+
+QVD / Balint Notes:
