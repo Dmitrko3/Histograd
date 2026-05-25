@@ -2,32 +2,33 @@
 
 This document describes the planned folder structure for the HistoGrad project.
 
-```txt
-Histograd/
+<pre><code>
+HistoGrad_Plugin/
+├── src/                               # Main source code directory
+│   ├── main.py                        # Entry point & CLI setup
+│   │
+│   ├── core/                          # The Core Framework (Integration Eng)
+│   │   ├── __init__.py
+│   │   ├── interfaces.py              # Contains the IDerivativeMethod base class
+│   │   ├── evaluator.py               # Calculates analytical derivative and error margins
+│   │   └── visualizer.py              # Generates the Convergence Rate graph
+│   │
+│   └── plugins/                       # The Strategy Modules (Algorithm Engineers)
+│       ├── __init__.py
+│       ├── richardson.py              # Richardson Extrapolation module
+│       └── advanced_method.py         # Second advanced method module
 │
-├── README.md
-├── requirements.txt
-│
-├── docs/
-│   ├── CODING_STANDARDS.md
-│   ├── REPO_STRUCTURE.md
-│   ├── MATH.md
-│   ├── MEETING_TRANSCRIPTS/
-│   │   ├── template_meeting.txt
-│   │   └── sprint0_meeting_01.txt
-│   └── PROMPT_LOGS/
-│
-├── src/
+├── tests/                             # Automated Test Suite (QA Engineer)
 │   ├── __init__.py
-│   ├── richardson.py
-│   ├── advanced_method.py
-│   ├── comparison.py
-│   └── cli.py
+│   ├── test_richardson.py             # Unit tests for Algo 1
+│   ├── test_advanced_method.py        # Unit tests for Algo 2
+│   ├── test_core.py                   # Tests for the evaluator and visualizer
+│   └── test_integration.py            # End-to-end tests for the whole CLI
 │
-├── tests/
-│   ├── test_richardson.py
-│   ├── test_advanced_method.py
-│   └── test_integration.py
+├── docs/                              # Documentation (Documentation Lead)
+│   └── MATH.md                        # Mathematical theory and summaries
 │
-└── examples/
-    └── example_usage.py
+├── requirements.txt                   # Project dependencies (e.g., numpy, matplotlib)
+├── coding_standards.md                # Repo rules and AI prompt guidelines
+└── README.md                          # Main project guide with placeholders
+</code></pre>
